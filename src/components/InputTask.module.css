@@ -1,0 +1,91 @@
+.formContainer {
+  display: flex;
+  flex-direction: row;
+  gap: 0.5rem;
+  margin-top: -1.625rem;
+}
+
+.formContainer input[type="text"]:focus {
+  outline: solid 1px var(--purple-dark);
+}
+
+.formContainer input[type="text"] {
+  background-color: var(--gray-500);
+  padding: 1rem;
+  border-radius: 8px;
+  color: var(--gray-300);
+  font-size: 1rem;
+  flex: 1;
+}
+
+.formContainer button[type="submit"] {
+  background-color: var(--blue-dark);
+  color: var(--white);
+  padding: 1rem;
+  font-weight: bold;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+
+  display: flex;
+  align-items: center;
+
+  transition: background-color 500ms;
+}
+
+.formContainer button[type="submit"]:hover {
+  background-color: var(--blue);
+}
+
+.formContainer button[type="submit"] svg {
+  margin-left: 0.5rem;
+}
+
+.listTasksContainer {
+  margin-top: 4rem;
+}
+
+.listTasksContainer header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1.5rem;
+}
+
+.listTasksContainer header strong {
+  font-size: 0.875rem;
+  margin-right: 0.5rem;
+  font-weight: bold;
+}
+
+.listTasksContainer header strong.textTasksCreated {
+  color: var(--blue);
+}
+
+.listTasksContainer header strong.textTasksDone {
+  color: var(--purple);
+}
+
+.listTasksContainer header strong span {
+  color: var(--gray-200);
+  background-color: var(--gray-400);
+  font-size: 0.875rem;
+  padding: 0.125rem 0.5rem;
+  border-radius: 999px;
+}
+
+.taksList .emptyTasksList {
+  padding: 4rem 0;
+  line-height: 1.4;
+  color: var(--gray-300);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-top: 1px solid var(--gray-400);
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+.taksList img {
+  margin-bottom: 1rem;
+}
